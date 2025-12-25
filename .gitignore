@@ -1,0 +1,159 @@
+############################################
+# CMake / C++ build artifacts
+############################################
+
+# Out-of-source build directories
+/build/
+/build-*/
+/cmake-build-*/
+/out/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+
+# Static / shared libs and executables
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+
+# Precompiled headers
+*.gch
+*.pch
+
+############################################
+# Sanitizers / Debug output
+############################################
+
+# Sanitizer symbol files
+*.dSYM/
+*.dSYM.zip
+
+############################################
+# Python
+############################################
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python packaging
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+############################################
+# Experiment outputs / data artifacts
+############################################
+
+# Generated experiment results
+experiments/results/
+experiments/output/
+experiments/logs/
+experiments/tmp/
+
+# Cached plots / figures
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+
+# Large data files
+*.csv
+*.tsv
+*.h5
+*.hdf5
+*.parquet
+*.npy
+*.npz
+
+############################################
+# LaTeX
+############################################
+
+# Core LaTeX aux files
+*.aux
+*.bbl
+*.blg
+*.bcf
+*.brf
+*.fls
+*.fdb_latexmk
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# Latexmk
+*.nav
+*.snm
+
+############################################
+# Editors / IDEs
+############################################
+
+# KDevelop
+.kdev4/
+*.kdev4
+
+# VSCode / VSCodium
+.vscode/
+
+# CLion
+.idea/
+
+# Vim / Neovim
+*.swp
+*.swo
+*.swn
+*.tmp
+*.bak
+
+############################################
+# OS-specific
+############################################
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+.nfs*
+
+############################################
+# Misc
+############################################
+
+# Coverage reports
+coverage/
+*.gcda
+*.gcno
+*.gcov
+
+# Cache directories
+.cache/
