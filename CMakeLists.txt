@@ -5,6 +5,17 @@ project(option_operators
   LANGUAGES CXX
 )
 
+# If you want the build process to take longer, uncomment the lines below
+
+#find_program(CLANG_TIDY_EXE NAMES clang-tidy)
+
+#if(CLANG_TIDY_EXE)
+#  set(CMAKE_CXX_CLANG_TIDY
+#    ${CLANG_TIDY_EXE};
+#    -quiet
+#  )
+#endif()
+
 # ---------------------------------------
 # Global settings
 # ---------------------------------------
@@ -20,6 +31,14 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 add_library(option_operators
   src/lib/dummy.cpp
 )
+
+find_program(CLANG_TIDY_EXE NAMES clang-tidy)
+
+if(CLANG_TIDY_EXE)
+  set_target_properties(option_operators PROPERTIES
+    CXX_CLANG_TIDY "${CLANG_TIDY_EXE};-quiet"
+  )
+endif()
 
 target_include_directories(option_operators
   PUBLIC
